@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Galeria de Produtos</title>
+</head>
+<body>
+    <h1>Galeria de Produtos</h1>
+    <ul>
+        {% for produto in produtos %}
+        <li>
+            <h2>{{ produto.descprod }}</h2>
+            <p>Código: {{ produto.codiprod }}</p>
+            <p>Valor: R$ {{ produto.valorprod }}</p>
+            <p>Situação: {{ produto.situprod }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'home' %}">Voltar para Home</a>
+</body>
+</html>
