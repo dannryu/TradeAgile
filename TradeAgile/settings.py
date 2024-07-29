@@ -77,15 +77,10 @@ WSGI_APPLICATION = 'TradeAgile.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tradeagile_db',
-        'USER': 'root',
-        'PASSWORD': '123456',
-        'HOST': 'localhost',  # Exemplo: 'localhost' ou '127.0.0.1'
-        'PORT': '3306',    # Exemplo: '3306'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 
 # Password validation
